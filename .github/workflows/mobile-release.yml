@@ -37,15 +37,6 @@ jobs:
         uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
-
-      - name: Install Libraries
-        run: |
-          haxelib install hmm --quiet
-          haxelib run hmm install --quiet
-
-      - name: Compile
-        run: haxelib run lime build ios -D officialBuild -nosign -arm64 -final
-
       - name: Make Ipa
         run: |
           cd export/release/ios/build/Release-iphoneos
