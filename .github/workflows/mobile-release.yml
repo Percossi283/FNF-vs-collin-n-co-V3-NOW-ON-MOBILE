@@ -32,18 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - name: Download Android Build
-        uses: actions/download-artifact@main
-        with:
-           name: androidBuild
-           path: /home/runner
-
       - name: Move Android File
         run: mv /home/runner/PsychEngine-release.apk /home/runner/PsychEngine-Android.apk
-
-      - name: Download iOS Build
-        uses: actions/download-artifact@main
-        with:
            name: iOSBuild
            path: /home/runner
 
