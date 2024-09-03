@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Move Android File
         run: mv /home/runner/PsychEngine-release.apk /home/runner/PsychEngine-Android.apk
-           name: iOSBuild
+           name:iOSBuild
            path: /home/runner
 
       - name: Publish The Release
