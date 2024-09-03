@@ -35,8 +35,7 @@ jobs:
       - name: Move Android File
         run: mv /home/runner/PsychEngine-release.apk /home/runner/PsychEngine-Android.apk
            name:iOSBuild
-           path: /home/runner
-
+           path:/home/runner
       - name: Publish The Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
