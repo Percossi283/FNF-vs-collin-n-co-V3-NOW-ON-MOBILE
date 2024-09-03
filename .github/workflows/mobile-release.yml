@@ -11,12 +11,6 @@ jobs:
         uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
-
-      - name: Install Libraries
-        run: |
-          haxelib install hmm --quiet
-          haxelib run hmm install --quiet
-
       - name: Configure Android
         run: |
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
